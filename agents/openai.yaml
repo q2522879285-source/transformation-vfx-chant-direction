@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transformation VFX & Chant Director"
+  short_description: "Design emotional hero transformations, chants, and VFX"
+  default_prompt: "Use $transformation-vfx-chant-direction to design an original hero transformation where the human decision, one clear '変身!' call, system chant, and staged VFX all land as one emotional beat."
