@@ -10,6 +10,8 @@
     <filter id="glowRed" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <filter id="glowCyan" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="glowWhite" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff3658" stop-opacity="0"/><stop offset=".5" stop-color="#ff3658" stop-opacity=".9"/><stop offset="1" stop-color="#52e5ff" stop-opacity="0"/></linearGradient>
     <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" fill="none" stroke="#fff" stroke-opacity=".045" stroke-width="1"/></pattern>
     <pattern id="micro" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff" fill-opacity=".12"/></pattern>
   </defs>
@@ -22,15 +24,25 @@
   <path d="M75 340H1005 M75 342H1005" stroke="#e83c58" stroke-opacity=".35"/>
   <path d="M80 1500H1000" stroke="#58dcff" stroke-opacity=".18"/>
   <path d="M120 120L960 1800 M960 120L120 1800" stroke="#fff" stroke-opacity=".028" stroke-width="2"/>
+  <!-- dramatic hero frame: a restrained neon sigil keeps the poster from reading like a plain checklist -->
+  <g fill="none" stroke-linejoin="round" opacity=".28">
+    <path d="M772 430 L1006 565 L1006 835 L772 970 L538 835 L538 565Z" stroke="#52e5ff" stroke-width="2" stroke-dasharray="9 18"/>
+    <path d="M772 470 L970 585 L970 815 L772 930 L574 815 L574 585Z" stroke="#ff3c5d" stroke-width="1"/>
+    <path d="M772 515 L930 606 L930 794 L772 885 L614 794 L614 606Z" stroke="#fff" stroke-width="1" stroke-opacity=".45"/>
+  </g>
+  <path d="M610 520 H934" stroke="url(#scan)" stroke-width="2" opacity=".72"/>
 
   <g font-family="Noto Sans SC">
     <text x="78" y="92" fill="#9ba9c6" font-size="18" letter-spacing="5">TRANSFORMATION / VFX / CHANT DIRECTION</text>
     <text x="78" y="132" fill="#fff" font-size="14" letter-spacing="3" opacity=".55">原创英雄变身设计法 · OPEN SOURCE EDITION</text>
     <rect x="836" y="70" width="166" height="46" rx="23" fill="#ff2548" fill-opacity=".12" stroke="#ff4a66" stroke-width="1"/>
     <text x="919" y="99" text-anchor="middle" fill="#ff8c9d" font-size="15" letter-spacing="2">MIT / FREE USE</text>
+    <text x="1000" y="170" text-anchor="end" fill="#52e5ff" font-size="13" letter-spacing="3" opacity=".8">RESOLVE // ANSWER // ASCEND</text>
 
-    <text x="78" y="256" fill="#eaf2ff" font-size="52" font-weight="700" letter-spacing="6">当决心回应力量</text>
+    <text x="82" y="260" fill="#ff3d5e" font-size="58" font-weight="700" letter-spacing="8" opacity=".18">当决心回应力量</text>
+    <text x="78" y="256" fill="#eaf2ff" font-size="58" font-weight="700" letter-spacing="8">当决心回应力量</text>
     <text x="80" y="310" fill="#95a4be" font-size="22" letter-spacing="3">不是穿上装甲，而是让守护的选择被世界听见</text>
+    <text x="80" y="332" fill="#ff5871" font-size="14" letter-spacing="4">CHOOSE TO PROTECT // THEN BECOME</text>
     <path d="M80 350H1000" stroke="#eaf2ff" stroke-opacity=".25"/>
     <path d="M80 350H356" stroke="#ff3d5e" stroke-width="4"/>
 
@@ -67,7 +79,7 @@
       <circle cx="132" cy="132" r="55" fill="#0b1020" stroke="#ff4969" stroke-width="4" filter="url(#glowRed)"/>
       <path d="M132 88 L145 122 L181 132 L145 143 L132 180 L119 143 L83 132 L119 122Z" fill="#f9fbff" filter="url(#glowCyan)"/>
       <text x="132" y="280" text-anchor="middle" fill="#ff8a9d" font-size="18" letter-spacing="4">02 / POWER ANSWERS</text>
-      <text x="132" y="330" text-anchor="middle" fill="#fff" font-size="66" font-weight="700" letter-spacing="8">変身！</text>
+      <text x="132" y="326" text-anchor="middle" fill="#fff" font-size="74" font-weight="700" letter-spacing="8">変身！</text>
       <text x="132" y="370" text-anchor="middle" fill="#aab9d0" font-size="17" letter-spacing="2">真人只喊一次 · 清楚口型 · 留一口气</text>
     </g>
 
@@ -79,8 +91,8 @@
     </g>
 
     <!-- armored hero -->
-    <g transform="translate(688 730)">
-      <text x="0" y="0" fill="#52ddff" font-size="18" letter-spacing="3">03 / FORMATION</text>
+    <g transform="translate(680 700) scale(1.06)">
+      <text x="35" y="0" fill="#52ddff" font-size="18" letter-spacing="3">03 / FORMATION</text>
       <text x="0" y="42" fill="#fff" font-size="30" font-weight="700">装甲不是贴上去</text>
       <text x="0" y="76" fill="#a7b7cf" font-size="18">每个模块都有来源、路径、锁定与后果</text>
       <!-- aura -->
@@ -90,7 +102,8 @@
       <path d="M129 139 L154 127 L180 139 L174 165 L137 165Z" fill="#52e5ff" filter="url(#glowCyan)"/>
       <path d="M114 112 L132 74 L157 48 L184 76 L201 112 L183 128 L129 128Z" fill="url(#armor)" stroke="#eff6ff" stroke-width="5"/>
       <path d="M130 87 L155 65 L181 88 L176 119 L137 119Z" fill="#09111e"/>
-      <path d="M153 67 L155 42 L163 67" fill="none" stroke="#ff4767" stroke-width="6"/>
+      <path d="M134 91 L153 84 L148 99 L135 102Z M176 91 L157 84 L162 99 L175 102Z" fill="#52e5ff" filter="url(#glowCyan)"/>
+      <path d="M153 67 L155 28 L163 67" fill="none" stroke="#ff4767" stroke-width="8" filter="url(#glowRed)"/>
       <path d="M95 188 L39 238 L60 330 L110 301" fill="url(#armorDark)" stroke="#b8c8de" stroke-width="5"/>
       <path d="M217 188 L273 238 L252 330 L202 301" fill="url(#armorDark)" stroke="#b8c8de" stroke-width="5"/>
       <path d="M101 244 L208 244 L231 389 L202 466 L108 466 L79 389Z" fill="url(#armor)" stroke="#e7eef8" stroke-width="6"/>
@@ -100,11 +113,17 @@
       <path d="M158 465 L202 465 L222 652 L166 652Z" fill="url(#armorDark)" stroke="#cbd8ea" stroke-width="5"/>
       <path d="M88 651 L148 651 L136 693 L72 693Z" fill="#080b13" stroke="#ff4968" stroke-width="4"/>
       <path d="M167 651 L224 651 L245 693 L181 693Z" fill="#080b13" stroke="#ff4968" stroke-width="4"/>
+      <path d="M70 694 H245" stroke="#fff" stroke-opacity=".9" stroke-width="2" filter="url(#glowWhite)"/>
       <!-- guided tracks -->
       <path d="M300 118 C351 175 327 233 274 275" fill="none" stroke="#ff3d5e" stroke-width="5" stroke-dasharray="10 12" filter="url(#glowRed)"/>
       <path d="M22 120 C-33 181 -9 240 40 275" fill="none" stroke="#50e4ff" stroke-width="5" stroke-dasharray="10 12" filter="url(#glowCyan)"/>
       <path d="M155 18 V-25" stroke="#fff" stroke-width="4" filter="url(#glowCyan)"/>
       <text x="4" y="755" fill="#ff8497" font-size="17">稳定落地 = 新重量被身体承认</text>
+    </g>
+
+    <g transform="translate(1010 470) rotate(90)">
+      <text x="0" y="0" fill="#eaf2ff" font-size="20" letter-spacing="7" opacity=".82">守ると決めろ</text>
+      <text x="0" y="28" fill="#52e5ff" font-size="11" letter-spacing="3" opacity=".72">MAKE THE CHOICE / HOLD THE LINE</text>
     </g>
 
     <!-- chant rail -->
@@ -150,7 +169,7 @@
       <text x="0" y="44" fill="#fff" font-size="24" font-weight="700">05 / AFTERMATH</text>
       <text x="0" y="80" fill="#ff8497" font-size="17">一次冲击环 · 一次环境回应 · 然后让余波衰减</text>
       <text x="932" y="48" text-anchor="end" fill="#b9c9df" font-size="17">保护对象安全 · 骑士稳定站定</text>
-      <text x="0" y="112" fill="#53e4ff" font-size="15" letter-spacing="0.6">github.com/q2522879285-source/transformation-vfx-chant-direction</text>
+      <text x="0" y="100" fill="#53e4ff" font-size="16" letter-spacing="0">github.com/q2522879285-source/transformation-vfx-chant-direction</text>
     </g>
   </g>
 </svg>
