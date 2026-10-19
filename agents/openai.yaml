@@ -1,4 +1,4 @@
 interface:
   display_name: "Transformation VFX & Chant Director"
   short_description: "Write transformation prompts with chants and staged VFX"
-  default_prompt: "Use $transformation-vfx-chant-direction to write a paste-ready transformation prompt focused on a beat-by-beat system chant, staged VFX causality, one clear human '変身!' call, and a readable completed form; keep emotion optional and brief."
+  default_prompt: "Use $transformation-vfx-chant-direction to write a paste-ready transformation prompt focused on a beat-by-beat system chant, staged VFX causality, one clear human '変身!' call, and a readable completed form; omit extra emotional storyline."

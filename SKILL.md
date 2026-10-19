@@ -1,14 +1,14 @@
 ---
 name: transformation-vfx-chant-direction
-description: "Write paste-ready transformation prompts centered on an independent system chant, beat-by-beat VFX order, and a readable completed form. Include one clear human '変身!' call; keep ordinary-person emotion to an optional one-line trigger. Use for original masked-hero transformation prompts, storyboards, or scene direction; do not use as a replacement for general mechanical-transformation, VFX, sound-mix, or platform-compilation skills."
+description: "Write paste-ready transformation prompts centered on an independent system chant, beat-by-beat VFX order, and a readable completed form. Include one clear human '変身!' call; keep story or emotion outside the core prompt. Use for original masked-hero transformation prompts; do not use as a replacement for general mechanical-transformation, VFX, sound-mix, or platform-compilation skills."
 ---
 
 # Transformation Prompt: Chant & VFX Direction
 
 ## Scope
 
-Own **chant timing → causal VFX beats → readable completion** inside a paste-ready transformation prompt.
-The ordinary person's decision is optional context, not the subject. The deliverable must make the human command, system chant, effect order, and final state easy to stage and check beat by beat.
+Own **prompt structure → chant timing → causal VFX beats → readable completion** inside a paste-ready transformation prompt.
+Story motivation and ordinary-person emotion are not required. The deliverable must make the human command, system chant, effect order, and final state easy to read and check beat by beat.
 
 Do not take ownership of:
 
@@ -23,7 +23,6 @@ Do not take ownership of:
 - reference-image invariants, if any (use them for the hero suit only unless the user says otherwise);
 - hero device/core, module routes, and completion state;
 - chant language/romanization and the visual/audio event each line must trigger;
-- an optional one-line trigger context: ordinary identity, threat, and one decisive action or intention.
 
 If a detail is missing but does not change the chant or VFX route, choose a concrete default and continue.
 For a missing delivery format, default to a 16:9, 20–30 second cinematic shot/prompt; state the chosen default in the output header.
@@ -37,7 +36,7 @@ Build the prompt in this order:
 3. **Chant map** — bind each independent system-chant line to a timestamp/beat, stress, visible event, sound, and inherited state.
 4. **VFX beat map** — stage source → route → contact/lock → consequence → decay for every major effect.
 5. **Camera and completion locks** — keep face, mouth, module boundaries, full silhouette, body weight, and final spatial relation readable.
-6. **Optional trigger context** — add no more than 1–2 beats of ordinary-person action or emotion, after the chant/VFX structure is already clear.
+6. **Optional context** — if the user supplies story context, keep it to one short line outside the chant/VFX core; otherwise omit it.
 
 ## Chant-first Prompt Contract
 
@@ -48,7 +47,7 @@ Keep these sources unmistakably separate:
 - The human alone says **「変身！」** (へんしん / Henshin) once.
 - Use a clean, visible mouth sync and foreground human voice; do not let a device, narrator, or chorus say it.
 - Do not repeat it, bury it under effects, or use it as a system-chant line.
-- This is the only required human-emotion cue; do not turn the prompt into a protection or resolve storyline.
+- This is the only required human vocal cue; do not expand the prompt into a protection or resolve storyline.
 
 ### System chant
 
@@ -92,7 +91,7 @@ For every effect write the chain explicitly: **source → route → contact/lock
 
 ```text
 Prompt brief:
-Optional trigger context (1–2 beats):
+Optional context (one line, only if supplied):
 Human declaration:
 Human command: 「変身！」 (once, with mouth-sync)
 System chant map:
@@ -103,10 +102,10 @@ VFX progression:
   - guided tracks and module routes
   - lock burst
   - aftermath and environmental response
-Body and camera choreography:
+Body and camera locks:
 Completion proof:
 Continuity and anti-obscuration locks:
-Paste-ready scene or prompt:
+Paste-ready prompt:
 ```
 
 ## Acceptance Check
@@ -119,9 +118,9 @@ Before delivery, confirm the final candidate—not an earlier draft—passes all
 - The five VFX levels escalate from a clear source and end in a single, decaying peak.
 - Armor/effect motion has visible causality and the body adapts to new weight or inertia.
 - The face, mouth, chant-triggered effects, and final full-body silhouette remain legible.
-- Any trigger context is optional, concise, and never displaces the chant, VFX, or camera read.
-- The scene uses original mechanisms and wording rather than copying a named franchise's character, slogan, melody, or shot.
+- Any story context is optional, one line at most, and never displaces the chant, VFX, or camera read.
+- The prompt uses original mechanisms and wording rather than copying a named franchise's character, slogan, melody, or shot.
 
 ## Handoff
 
-When the scene needs deeper engineering, effect construction, sound design, or platform formatting, preserve this prompt/chant/VFX map and pass it to the relevant specialist. A successful tool call or generated frame does not by itself prove that the chant timing, effect causality, or final readability worked.
+When the prompt needs deeper engineering, effect construction, sound design, or platform formatting, preserve this prompt/chant/VFX map and pass it to the relevant specialist. A successful tool call or generated frame does not by itself prove that the chant timing, effect causality, or final readability worked.
